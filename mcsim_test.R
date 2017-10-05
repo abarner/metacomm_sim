@@ -94,5 +94,6 @@ sim_result <- fn.metaSIM(
   output.dir.path = "my_sim_output_dir"
 )
 
-
+library(vegan)
+d_pcnm <- data.frame(scores(pcnm(dist(data.frame(x=1:n,y=1)))))
 
